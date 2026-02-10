@@ -146,6 +146,7 @@
     hunspell
     hunspellDicts.en_US
     hunspellDicts.pl_PL
+
     kitty
     #clippy
     #pkg-config
@@ -177,6 +178,13 @@
 
   programs.nix-ld = {
     enable = true;
+  };
+
+  programs.starship = {
+    enable = true;
+
+    settings = builtins.fromTOML
+      (builtins.readFile ./config/starship.toml);
   };
 
 

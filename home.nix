@@ -13,4 +13,5 @@
     };
 
     xdg.configFile."kdeglobals".source = ./config/kdeglobals;
+    xdg.configFile."kitty/kitty.conf".source = ./config/kitty/kitty.conf;
 }
